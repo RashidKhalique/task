@@ -1,0 +1,67 @@
+
+    // <div className="flex justify-center items-center  bg-gray-100">
+    //   <form className="w-full  p-8 bg-white rounded-lg shadow-lg" onSubmit={handleSubmit}>
+    //     <h2 className="text-2xl font-semibold mb-6 text-blue-700 text-center">Update User Profile</h2>
+    //     {error && <div className="text-red-500 mb-4 text-center">{error}</div>}
+    //     {isUpdated && <div className="text-green-500 mb-4 text-center">Profile updated successfully!</div>}
+
+    //     {/* User Profile Section */}
+    //     <div className="mb-6">
+    //       <h3 className="text-lg font-semibold mb-2">User Profile</h3>
+    //       {Object.entries(formData.userProfile || {}).map(([key, value]) => (
+    //         <div className="mb-4" key={key}>
+    //           <label className="block text-gray-700 text-sm font-bold mb-2 capitalize" htmlFor={key}>{key.replace(/([A-Z])/g, " $1").trim()}</label>
+    //           <input className="w-full border px-3 py-2 rounded" type="text" id={key} value={value} onChange={(e) => handleInputChange(`userProfile.${key}`, e.target.value)} />
+    //         </div>
+    //       ))}
+    //     </div>
+
+    //     {/* Contact Info Section */}
+    //     <div className="mb-6">
+    //       <h3 className="text-lg font-semibold mb-2">Contact Information</h3>
+    //       {Object.entries(formData.contactInfo || {}).map(([key, value]) => (
+    //         <div className="mb-4" key={key}>
+    //           <label className="block text-gray-700 text-sm font-bold mb-2 capitalize" htmlFor={key}>{key.replace(/([A-Z])/g, " $1").trim()}</label>
+    //           <input className="w-full border px-3 py-2 rounded" type="text" id={key} value={value} onChange={(e) => handleInputChange(`contactInfo.${key}`, e.target.value)} />
+    //         </div>
+    //       ))}
+    //     </div>
+
+    //     {/* Employment Info Section */}
+    //     <div className="mb-6">
+    //       <h3 className="text-lg font-semibold mb-2">Employment Information</h3>
+    //       {Object.entries(formData.employmentInfo || {}).map(([key, value]) => (
+    //         <div className="mb-4" key={key}>
+    //           <label className="block text-gray-700 text-sm font-bold mb-2 capitalize" htmlFor={key}>{key.replace(/([A-Z])/g, " $1").trim()}</label>
+    //           <input className="w-full border px-3 py-2 rounded" type="text" id={key} value={value} onChange={(e) => handleInputChange(`employmentInfo.${key}`, e.target.value)} />
+    //         </div>
+    //       ))}
+    //     </div>
+
+    //     {/* Financial Info Section */}
+    //     <div className="mb-6">
+    //       <h3 className="text-lg font-semibold mb-2">Financial Information</h3>
+    //       {Object.entries(formData.financialInfo || {}).map(([key, value]) => (
+    //         <div className="mb-4" key={key}>
+    //           <label className="block text-gray-700 text-sm font-bold mb-2 capitalize" htmlFor={key}>{key.replace(/([A-Z])/g, " $1").trim()}</label>
+    //           <input className="w-full border px-3 py-2 rounded" type="number" id={key} value={value} onChange={(e) => handleInputChange(`financialInfo.${key}`, e.target.value)} />
+    //         </div>
+    //       ))}
+    //     </div>
+
+    //     {/* Preferences Section */}
+    //     <div className="mb-6">
+    //       <h3 className="text-lg font-semibold mb-2">Preferences</h3>
+    //       {Object.entries(formData.preferences || {}).map(([key, value]) => (
+    //         <div className="mb-4" key={key}>
+    //           <label className="block text-gray-700 text-sm font-bold mb-2 capitalize" htmlFor={key}>{key.replace(/([A-Z])/g, " $1").trim()}</label>
+    //           <input className="w-full border px-3 py-2 rounded" type="text" id={key} value={Array.isArray(value) ? value.join(", ") : value} onChange={(e) => handleInputChange(`preferences.${key}`, e.target.value.split(", "))} />
+    //         </div>
+    //       ))}
+    //     </div>
+
+    //     <div className="flex items-center justify-center mt-6">
+    //       <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update Profile</button>
+    //     </div>
+    //   </form>
+    // </div>
