@@ -51,3 +51,34 @@ function App() {
 }
 
 export default App;
+
+
+// import React from 'react';
+// import { useForm } from 'react-hook-form';
+
+// const App = () => {
+//   const { register, handleSubmit, formState: { errors } } = useForm();
+
+//   const submit = handleSubmit((data) => {
+//     console.log(data);
+//   });
+
+//   return (
+//     <div className='flex flex-col bg-green-300 items-center justify-center h-screen'>
+//       <h1>Form</h1>
+
+//       <form onSubmit={submit} className='flex flex-col gap-4'>
+//         <label htmlFor="name">Name</label>
+//         <input type="text" {...register("name",{required:true}) } className='border p-2 rounded-2xl' />
+//         {errors.firstName?.type === true  && <span className='text-red-500'>This field is required</span>}
+        
+//         <label htmlFor="caste">Caste</label>
+//         <input type="text" {...register("caste")} className='border p-2 rounded-2xl' />
+        
+//         <button type="submit" className='mt-4 p-2 bg-blue-500 text-white rounded-lg'>Submit</button>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default App;
